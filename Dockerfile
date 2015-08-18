@@ -1,7 +1,7 @@
 FROM unblibraries/apache
 MAINTAINER Jacob Sanford <jsanford_at_unb.ca>
 
-ENV COMPOSER_PATH=/usr/bin
+ENV COMPOSER_PATH /usr/bin
 
 RUN locale-gen en_US.UTF-8
 ENV LANG       en_US.UTF-8
