@@ -22,4 +22,8 @@ ADD conf/php5/apache2/php.ini /etc/php5/fpm/php.ini
 ADD init/ /etc/my_init.d/
 RUN chmod -v +x /etc/service/*/run
 
+# Clean-up
+RUN apt-get clean && \
+  rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
+
 EXPOSE 80
