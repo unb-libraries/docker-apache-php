@@ -2,10 +2,10 @@ FROM unblibraries/apache
 MAINTAINER Jacob Sanford <jsanford_at_unb.ca>
 
 ENV COMPOSER_PATH /usr/bin
-
-RUN locale-gen en_US.UTF-8
 ENV LANG       en_US.UTF-8
 ENV LC_ALL     en_US.UTF-8
+
+RUN locale-gen en_US.UTF-8
 
 RUN apt-get update && \
   DEBIAN_FRONTEND="noninteractive" apt-get install --yes php5-cli php5-mysql \
