@@ -1,14 +1,14 @@
-# unblibraries/apache-php [![](https://badge.imagelayers.io/unblibraries/apache-php:latest.svg)](https://imagelayers.io/?images=unblibraries/apache-php:latest 'Get your own badge on imagelayers.io')
-Docker container : leverages phusion/baseimage to deploy a baseline libapache2-mod-php5 Apache container.
+# unblibraries/apache-php [![](https://badge.imagelayers.io/unblibraries/apache-php:alpine.svg)](https://imagelayers.io/?images=unblibraries/apache-php:alpine 'Get your own badge on imagelayers.io')
+Docker container : Alpine linux based Apache/PHP.
 
 ## Usage
 ```
 docker run \
        --rm \
        --name apache-php \
-       -v /local/dir:/var/www/html \
+       -v /local/dir:/app/html \
        -p 80:80 \
-       unblibraries/apache-php
+       unblibraries/apache-php:alpine
 ```
 
 ## License
