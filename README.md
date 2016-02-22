@@ -1,18 +1,2 @@
-# unblibraries/apache-php [![](https://badge.imagelayers.io/unblibraries/apache-php:latest.svg)](https://imagelayers.io/?images=unblibraries/apache-php:latest 'Get your own badge on imagelayers.io')
-Docker container : leverages phusion/baseimage to deploy a baseline libapache2-mod-php5 Apache container.
-
-## Usage
-```
-docker run \
-       --rm \
-       --name apache-php \
-       -v /local/dir:/var/www/html \
-       -p 80:80 \
-       unblibraries/apache-php
-```
-
-## License
-- unblibraries/apache-php is licensed under the MIT License:
-  - http://opensource.org/licenses/mit-license.html
-- Attribution is not required, but much appreciated:
-  - `Apache PHP Docker Container by UNB Libraries`
+# Branch Deprecated
+Use of this branch (_master_) and docker image (_unblibraries/apache-php:master_) is deprecated. Development has halted, and updates will not continue. As this branch is designated in DockerHub as ```unblibraries/apache-php:latest```, any references should be replaced ASAP with [unblibraries/apache-php:alpine](https://github.com/unb-libraries/docker-apache-php/tree/alpine), which will be **set as latest in DockerHub on June 1, 2017**. This branch will then be deleted and the image removed from DockerHub.
