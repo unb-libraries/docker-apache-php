@@ -8,5 +8,3 @@ RUN apk --update add php-apache2 curl php-cli php-json php-phar php-openssl && \
   curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
 ADD conf/php/php.ini /etc/php/php.ini
-
-CMD ["/scripts/run.sh"]
