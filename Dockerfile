@@ -8,6 +8,7 @@ RUN apk --update add php-apache2 curl php-curl php-cli php-json php-phar php-ope
   rm -f /var/cache/apk/* && \
   curl -sS https://getcomposer.org/installer | php -- --install-dir=${COMPOSER_PATH} --filename=composer
 
+COPY conf/apache2/app.conf /etc/apache2/conf.d/app.conf
 COPY conf/php/php.ini /etc/php/php.ini
 
 COPY scripts /scripts
